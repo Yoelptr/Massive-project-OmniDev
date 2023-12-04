@@ -2,37 +2,67 @@ import React from "react";
 import LogoEs from "../assets/edusmart_logo1.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+const navigation = [
+  { name: "Beranda", path: "/" },
+  { name: "Jadwal", path: "/Jadwal" },
+  { name: "Kelas", path: "/Kelas" },
+  { name: "Mata Pelajaran", path: "/Mata Pelajaran" },
+  { name: "Konsultasi", path: "/Konsultasi" },
+];
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
+  const [profile, setProfile] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
   };
+  const handlePro = () => {
+    setProfile(!profile);
+  };
 
   return (
-    <div>
-      <div className="container flex justify-between items-center h-24  mx-auto px-4">
+    <nav className="shadow">
+      <div className="container max-w-[1240px] flex justify-between items-center h-24  mx-auto px-4 ">
         <img className="h-24 w-24" src={LogoEs} />
         <ul className="flex">
-          <li className="p-4">Beranda</li>
-          <li className="p-4">Jadwal</li>
-          <li className="p-4">Kelas</li>
-          <li className="p-4">MaPel</li>
-          <li className="p-4">Konsultasi</li>
+          {navigation.map((item) => (
+            <NavLink
+              key={item.name}
+              to={item.path}
+              className={({ isActive }) => "rounded-md px-3 py-2 text-ms font-medium" + (isActive ? " bg-[#1985EA] text-white" : "text-black hover:text-gray-500")}
+            >
+              {item.name}
+            </NavLink>
+          ))}
         </ul>
         <div className="hidden min-[768px]:block">
-          <button
-            type="button"
-            className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-gray-800"
-            id="user-menu-button"
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            <span className="absolute -inset-1.5"></span>
-            <span className="sr-only">Open user menu</span>
-            <img className="h-10 w-10 rounded-full" src="" alt="" />
+          <button type="button" className="flex rounded-full bg-gray-800 text-sm  focus:ring-offset-2 focus:ring-offset-gray-800" onClick={handlePro}>
+            <img className="h-10 w-10 rounded-full" src="" alt="Profile" />
           </button>
+        </div>
+        <div
+          className={
+            !profile
+              ? "absolute right-10 top-16 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ease-in-out duration-300 "
+              : "hidden"
+          }
+        >
+          <div>
+            <a href="" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+              Your Profile
+            </a>
+          </div>
+          <div>
+            <NavLink to="/Login" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">
+              LOG OUT
+            </NavLink>
+          </div>
         </div>
         <div onClick={handleNav} className="block md:hidden">
           {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -47,7 +77,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
