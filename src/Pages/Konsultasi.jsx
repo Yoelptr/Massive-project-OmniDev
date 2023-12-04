@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "../component/Navbar";
 
 function Konsultasi() {
-  return <div>Konsultasi</div>;
+  return (
+    <>
+      <Navbar />
+      <div>Kelas</div>
+    </>
+  );
 }
 
 export default Konsultasi;

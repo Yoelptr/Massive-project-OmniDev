@@ -3,7 +3,6 @@ import LogoEs from "../assets/edusmart_logo1.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
 const navigation = [
   { name: "Beranda", path: "/" },
   { name: "Jadwal", path: "/Jadwal" },
