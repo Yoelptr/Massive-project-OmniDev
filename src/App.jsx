@@ -7,8 +7,6 @@ import Jadwal from "./Pages/jadwal";
 import MaPel from "./Pages/MaPel";
 import Konsultasi from "./Pages/Konsultasi";
 
-import Navbar from "./component/Navbar";
-
 function App() {
   return (
     <div>

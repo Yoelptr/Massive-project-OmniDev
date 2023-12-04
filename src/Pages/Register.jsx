@@ -1,8 +1,10 @@
 import React from "react";
 import LogoEs from "../assets/edusmart_logo1.png";
 import LogoEs2 from "../assets/edusmart_logo2.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#1985EA]">
       <div className="grid grid-clos-1 sm:grid-cols-2 h-screen w-full ">
@@ -26,12 +28,14 @@ export default function Login() {
             <div className="flex flex-col py-2">
               <input className="border p-2 bg-sky-100 bg-opacity-75 rounded-lg" placeholder="Password" type="password" />
             </div>
-            <button className="border w-full my-5 py-2 bg-[#1985EA] text-white rounded-lg">Sign Up</button>
+            <button onClick={() => navigate("/Login")} className="border w-full my-5 py-2 bg-[#1985EA] text-white rounded-lg">
+              Log in
+            </button>
             <p className="flex justify-center">
               Sudah Punya Akun?{" "}
               <a href="/Login" className="text-sky-500">
                 {" "}
-                Log in
+                Login
               </a>
             </p>
           </form>
