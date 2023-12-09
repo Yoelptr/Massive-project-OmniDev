@@ -11,7 +11,7 @@ const Kelas = () => {
 
       <section className="my-10">
         <div className="max-w-[1240px] mx-auto rounded-xl bg-[#1985EA] h-[600px] items-center justify-center">
-          <div className="flex justify-between text-2xl font-medium p-5">
+          <div className="flex justify-between text-2xl font-medium p-6">
             <div className="text-2xl  ">
               <h3>Kelas Baru</h3>
             </div>
@@ -43,7 +43,7 @@ const Kelas = () => {
         <div className="max-w-[1240px] mx-auto rounded-xl bg-[#1985EA] h-[600px] items-center justify-center">
           <div className="flex justify-between text-2xl font-medium p-5">
             <div className="text-2xl  ">
-              <h3>Kelas Baru</h3>
+              <h3>Kelas</h3>
             </div>
             <div>
               <IoNotificationsSharp size={30} />
@@ -78,7 +78,7 @@ const Kelas = () => {
                 <FaUser />
               </div> */}
             </div>
-            <button className="border-black w-[200px] my-5 py-2 bg-[#0B2640] text-white rounded-xl">Tambah</button>
+            <button className="border-black w-[200px] my-5 py-2 bg-[#0B2640] text-white rounded-xl">Simpan</button>
           </div>
         </div>
       </section>
