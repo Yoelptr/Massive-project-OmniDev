@@ -11,7 +11,7 @@ function Beranda() {
   return (
     <>
       <Navbar />
-      <div className="">
+      <div>
         <section className="mx-auto max-w-[1240px] flex flex-col items-center justify-center py-10 md:h-[500px] ">
           <div className="grid grid-cols-1 items-center gap-1 md:grid-cols-2">
             <div className="mt-14  items-center">
@@ -75,7 +75,7 @@ function Beranda() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1240px] flex flex-col items-center justify-center py-10 md:h-[500px] ">
+        <section className="mx-auto max-w-[1240px] flex flex-col items-center justify-center py-10 md:h-[500px] m-6">
           <div className="grid grid-cols-1 items-center gap-1 md:grid-cols-2">
             <div className="mt-14  items-center">
               {" "}
