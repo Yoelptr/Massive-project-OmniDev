@@ -6,13 +6,10 @@ import { NavLink } from "react-router-dom";
 const navigation = [
   { name: "Beranda", path: "/" },
   { name: "Jadwal", path: "/Jadwal" },
-  { name: "Kelas", path: "/Kelas" },
+  { name: "Kelas", path: "/Kelas2" },
   { name: "Mata Pelajaran", path: "/Mata Pelajaran" },
   { name: "Konsultasi", path: "/Konsultasi" },
 ];
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -26,15 +23,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="shadow">
+    <nav className="border-b">
       <div className="container max-w-[1240px] flex justify-between items-center h-24  mx-auto px-4 ">
-        <img className="h-24 w-24" src={LogoEs} />
+        <img className="h-20 w-20 " src={LogoEs} />
         <ul className="flex">
           {navigation.map((item) => (
             <NavLink
               key={item.name}
               to={item.path}
-              className={({ isActive }) => "rounded-md px-3 py-2 text-ms font-medium" + (isActive ? " bg-[#1985EA] text-white" : "text-black hover:text-gray-500")}
+              className={({ isActive }) => " rounded-md px-3 py-2 text-ms font-medium " + (isActive ? " bg-[#1985EA] text-white" : "text-black hover:text-gray-500")}
             >
               {item.name}
             </NavLink>
