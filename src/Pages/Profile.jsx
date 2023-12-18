@@ -26,7 +26,7 @@ const Profile = () => {
               </div>
             </div>
             <div className="w-[218px] h-[367px] left-[15px] top-[60px] absolute">
-              <div clas sName="w-[130px] h-[22px] left-0 top-0 absolute">
+              <div className="w-[130px] h-[22px] left-0 top-0 absolute">
                 <div className="w-32 h-[18px] left-[2px] top-0 absolute">
                   <div className="left-[16px] top-0 absolute text-center text-black text-[15px]">Biodata Pribadi</div>
                   <div className="w-3 h-[13.33px] left-0 top-0 absolute"></div>
