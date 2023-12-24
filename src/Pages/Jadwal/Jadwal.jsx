@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../component/Navbar";
 import { Footer } from "../../component/Footer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Outlet } from "react-router-dom";
 function Jadwal() {
   const navigate = useNavigate();
   return (
@@ -46,7 +46,7 @@ function Jadwal() {
                       </td>
                       <td className=" p-2 border-[1px] border-black border-style-solid text-center">Senin, 13:00-14:40 Kelas 12 MIPA</td>
                       <td className="p-2 border-[1px] border-black border-style-solid text-center">
-                        <button onClick={() => navigate("/Jadwal_2")} className="item-center w-auto mx-auto my-1 py-1 bg-[#0B2640]  text-white rounded-lg p-2 text-center">
+                        <button onClick={() => navigate("absensi")} className="item-center w-auto mx-auto my-1 py-1 bg-[#0B2640]  text-white rounded-lg p-2 text-center">
                           Buka Presensi
                         </button>
                       </td>
@@ -56,7 +56,7 @@ function Jadwal() {
                       <td className="item-center justify-center p-2 border-[1px] border-black border-style-solid text-center">Kimia</td>
                       <td className=" p-2 border-[1px] border-black border-style-solid text-center">Senin, 09:00-11:40 Kelas 11 MIPA</td>
                       <td className="p-2 border-[1px] border-black border-style-solid text-center">
-                        <button onClick={() => navigate("")} className="item-center w-auto mx-auto my-1 py-1 bg-[#0B2640]  text-white rounded-lg p-2 text-center">
+                        <button onClick={() => navigate("absensi2")} className="item-center w-auto mx-auto my-1 py-1 bg-[#0B2640]  text-white rounded-lg p-2 text-center">
                           Buka Presensi
                         </button>
                       </td>
@@ -78,6 +78,7 @@ function Jadwal() {
           </div>
         </section>
       </div>
+      <Outlet />
       <Footer />
     </>
   );

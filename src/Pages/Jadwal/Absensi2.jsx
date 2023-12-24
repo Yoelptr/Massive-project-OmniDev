@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "../../component/Navbar";
 import { Footer } from "../../component/Footer";
-function Jadwal() {
+function Absensi2() {
   return (
     <>
-      <Navbar />
       <div className="">
         <section className="container mx-auto max-w-[1240px] flex flex-col items-center justify-top py-10 md:h-[500px]">
           <div>
@@ -12,7 +10,7 @@ function Jadwal() {
               <div>
                 <div className="flex justify-between">
                   <div className="">
-                    <p className="text-[20px] font-bold text-white">Presensi</p>
+                    <p className="text-[20px] font-bold text-white">Presensi Senin, 09:00-11:40 Kelas 11 MIPA</p>
                   </div>
                   <div className="">
                     <button>
@@ -30,13 +28,13 @@ function Jadwal() {
                 <div className="flex flex-col  justify-between item-center gap-2">
                   <div className="bg-white rounded-5 flex flex-row p-1 items-center justify-between">
                     <div>
-                      <div className="text-[20px]">Mitha Khalia</div>
+                      <div className="text-[20px]">Budi Setiawan</div>
                     </div>
                     <div>
                       <button className="border-black bg-green-400 border w-auto m-2 p-2 text-black rounded-lg">Hadir</button>
                     </div>
                     <div>
-                      <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
+                      <button className="border-black  border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
                     </div>
                     <div>
                       <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Sakit</button>
@@ -47,14 +45,14 @@ function Jadwal() {
                   </div>
                   <div className=" bg-white rounded-5 flex flex-wrap p-1 items-center justify-between">
                     <div>
-                      <div className="text-[20px]">Amanda</div>
+                      <div className="text-[20px]">Dewi Lestari</div>
                     </div>
                     <div className="flex justify-between">
                       <div>
-                        <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Hadir</button>
+                        <button className="border-black  border w-auto m-2 p-2 text-black rounded-lg">Hadir</button>
                       </div>
                       <div>
-                        <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
+                        <button className="border-black bg-yellow-400 border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
                       </div>
                       <div>
                         <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Sakit</button>
@@ -66,14 +64,14 @@ function Jadwal() {
                   </div>
                   <div className=" bg-white rounded-5 flex flex-wrap p-1 items-center justify-between">
                     <div>
-                      <div className="text-[20px]">John</div>
+                      <div className="text-[20px]">Siti</div>
                     </div>
                     <div className="flex justify-between">
                       <div>
-                        <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Hadir</button>
+                        <button className="border-black bg-green-400 border w-auto m-2 p-2 text-black rounded-lg">Hadir</button>
                       </div>
                       <div>
-                        <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
+                        <button className="border-black  border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
                       </div>
                       <div>
                         <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Sakit</button>
@@ -85,7 +83,7 @@ function Jadwal() {
                   </div>
                   <div className=" bg-white rounded-5 flex flex-wrap p-1 items-center justify-between">
                     <div>
-                      <div className="text-[20px]">Yoel</div>
+                      <div className="text-[20px]">Rahayu</div>
                     </div>
                     <div className="flex justify-between">
                       <div>
@@ -95,7 +93,7 @@ function Jadwal() {
                         <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Izin</button>
                       </div>
                       <div>
-                        <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Sakit</button>
+                        <button className="border-black bg-orange-400 border w-auto m-2 p-2 text-black rounded-lg">Sakit</button>
                       </div>
                       <div>
                         <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Tanpa Keterangan</button>
@@ -104,7 +102,7 @@ function Jadwal() {
                   </div>
                   <div className=" bg-white rounded-5 flex flex-wrap p-1 items-center justify-between">
                     <div>
-                      <div className="text-[20px]">Hasan</div>
+                      <div className="text-[20px]">Alex</div>
                     </div>
                     <div className="flex justify-between">
                       <div>
@@ -117,7 +115,7 @@ function Jadwal() {
                         <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Sakit</button>
                       </div>
                       <div>
-                        <button className="border-black border w-auto m-2 p-2 text-black rounded-lg">Tanpa Keterangan</button>
+                        <button className="border-black bg-red-500 border w-auto m-2 p-2 text-black rounded-lg">Tanpa Keterangan</button>
                       </div>
                     </div>
                   </div>
@@ -132,4 +130,4 @@ function Jadwal() {
   );
 }
 
-export default Jadwal;
+export default Absensi2;

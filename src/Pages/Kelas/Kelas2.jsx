@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../component/Navbar";
 import { Footer } from "../../component/Footer";
-import { AiOutlineSearch, AiFillDelete } from "react-icons/ai";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
