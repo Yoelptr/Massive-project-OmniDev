@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../component/Navbar";
-import Sidenav from "../../component/sidenav";
+import Sidenav from "../../component/Sidenavi";
 import { AiOutlineUpload } from "react-icons/ai";
 import { FaFile, FaFolderOpen } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";

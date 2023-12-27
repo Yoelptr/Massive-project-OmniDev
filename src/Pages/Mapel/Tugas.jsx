@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../component/Navbar";
-import Sidenav from "../../component/sidenav";
+import Sidenav from "../../component/Sidenav";
 import { FaEdit } from "react-icons/fa";
 import StatisticsIcon from "../../assets/stats.png";
 import { useNavigate } from "react-router-dom";
