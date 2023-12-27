@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../component/Navbar";
-import Sidenav from "../../component/sidenav";
+import Sidenav from "../../component/Sidenav";
 import { useNavigate } from "react-router-dom";
 const Materi = () => {
   const navigate = useNavigate();
